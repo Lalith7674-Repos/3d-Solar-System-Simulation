@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.light-theme {
+    background-color: #f0f0f0;
+    color: #333333;
+}
+
+canvas {
+    display: block;
+}
+
+#controls {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    transition: background 0.3s;
+}
+
+body.light-theme #controls {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+#pauseBtn {
+    background-color: #f44336;
+}
+
+#pauseBtn:hover {
+    background-color: #d32f2f;
+}
+
+#speedBtn {
+    background-color: #2196F3;
+}
+
+#speedBtn:hover {
+    background-color: #1976D2;
+}
+
+#themeToggle {
+    background-color: #FFC107;
+    color: #333;
+}
+
+#themeToggle:hover {
+    background-color: #FFB300;
+}
+
+#sliders {
+    display: none;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+label {
+    font-size: 12px;
+}
+
+input[type="range"] {
+    width: 100px;
+}
+
+#tooltip {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    pointer-events: none;
+    font-size: 14px;
+    display: none;
+    z-index: 1000;
+    max-width: 250px;
+}
+
+#tooltip strong {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+#tooltip p {
+    margin: 5px 0;
+}

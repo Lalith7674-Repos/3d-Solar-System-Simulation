@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System Simulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="tooltip"></div>
+    <div id="controls">
+        <button id="pauseBtn">Pause</button>
+        <button id="speedBtn">Speed Controls</button>
+        <div id="sliders">
+            <div class="slider-container">
+                <label for="mercurySpeed">Mercury: <span id="mercurySpeedValue">100%</span></label>
+                <input type="range" id="mercurySpeed" min="0" max="200" value="100">
+            </div>
+            <div class="slider-container">
+                <label for="venusSpeed">Venus: <span id="venusSpeedValue">100%</span></label>
+                <input type="range" id="venusSpeed" min="0" max="200" value="100">
+            </div>
+            <div class="slider-container">
+                <label for="earthSpeed">Earth: <span id="earthSpeedValue">100%</span></label>
+                <input type="range" id="earthSpeed" min="0" max="200" value="100">
+            </div>
+            <div class="slider-container">
+                <label for="marsSpeed">Mars: <span id="marsSpeedValue">80%</span></label>
+                <input type="range" id="marsSpeed" min="0" max="200" value="80">
+            </div>
+            <div class="slider-container">
+                <label for="jupiterSpeed">Jupiter: <span id="jupiterSpeedValue">100%</span></label>
+                <input type="range" id="jupiterSpeed" min="0" max="200" value="100">
+            </div>
+            <div class="slider-container">
+                <label for="saturnSpeed">Saturn: <span id="saturnSpeedValue">100%</span></label>
+                <input type="range" id="saturnSpeed" min="0" max="200" value="100">
+            </div>
+            <div class="slider-container">
+                <label for="uranusSpeed">Uranus: <span id="uranusSpeedValue">100%</span></label>
+                <input type="range" id="uranusSpeed" min="0" max="200" value="100">
+            </div>
+            <div class="slider-container">
+                <label for="neptuneSpeed">Neptune: <span id="neptuneSpeedValue">100%</span></label>
+                <input type="range" id="neptuneSpeed" min="0" max="200" value="100">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.134.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.134.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
